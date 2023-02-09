@@ -1,0 +1,15 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Django Analytics</title>
+        <link rel="stylesheet" href="{% static 'emissions/css/base.css' %}?{% now 'U' %}">
+    </head>
+
+    <body>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
