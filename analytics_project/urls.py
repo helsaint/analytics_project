@@ -24,5 +24,6 @@ urlpatterns = [
     path('cities2/', include('cities.urls')),
     path('emissions/', include('emissions.urls')),
     path('blackdb/', include('blackDB.urls')),
-    re_path(r'^', include('cms.urls')),
+    #re_path(r'^', include('cms.urls')),
+    path('', include('blackDB.urls')),
 ]
